@@ -14,7 +14,7 @@ void TimerFunction() {
     while(timer) {
 
         this_thread::sleep_for(chrono::seconds(1));
-        cout <<"                             " << timer << " seconds left" << endl;
+        cout <<"                             " << timer << " seconds" << endl;
         timer--;
     }
     timesUp = 1;
@@ -35,7 +35,7 @@ void gameFunction() {
         if(signDecider%2 == 0) {
 
             int answer = max(numberOne,numberTwo) + min(numberOne,numberTwo);
-            cout << max(numberOne,numberTwo) << '+' << min(numberOne,numberTwo) << '=' << endl;
+            cout << max(numberOne,numberTwo) << " + " << min(numberOne,numberTwo) << " = " << endl;
 
             int inputANS;
 
@@ -55,7 +55,7 @@ void gameFunction() {
         }else {
 
             int answer = max(numberOne,numberTwo) - min(numberOne,numberTwo);
-            cout << max(numberOne,numberTwo) << '-' << min(numberOne,numberTwo) << '=' << endl;
+            cout << max(numberOne,numberTwo) << " - " << min(numberOne,numberTwo) << " = "  << endl;
 
             int inputANS1;
 
